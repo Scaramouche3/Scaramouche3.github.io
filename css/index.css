@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: SimSun;
+}
+nav{
+    text-align: center;
+    padding-top: 1%;
+    background-color: #1f3041;
+/* 用取色器选择的颜色，更加符合主题 */
+    color: #fff;
+}
+nav ul li{
+    list-style:none;
+    display: inline;
+    margin-left: 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 22px;
+}
+/*选择鼠标指针浮动在其上的元素，设置其样式。使导航区更加美观，更有回应感*/
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.386);
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    transition: padding 0.3s, color 0.3s;
+}
+/* 中间内容区，背景图片是我很喜欢的一个游戏人物  */
+div#Container {
+    text-align: center;
+    background-image: url(../images/index.jpg);
+    width: 100%;
+    height: 250vh;
+    background-position: center;
+    background-size: cover;
+/* 关于背景图像的设置，保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小 */
+}  
+#Container h1{
+    text-align: center;
+    font-family: cursive;
+    padding-top: 50px;
+}
+/* 页脚区的布局设置 */
+  footer {
+    background-color: #98c1f9;
+    color:            #efe5d0;
+    text-align:       center;
+    padding:          15px;
+    margin: 10px 10px 10px 10px;
+    font-size:        90%;
+  } 
+/* 设置超链接的颜色 */
+a:link {
+    color:           white;
+    text-decoration:  none;
+  }
+a:visited {
+    color:            #98732e;
+    text-decoration:  none;
+  }

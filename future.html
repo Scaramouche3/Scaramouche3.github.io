@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈柏林的个人网页</title>
+    <link rel="stylesheet" type="text/css" href="./css/future.css"
+</head>
+<body>
+<!--页眉区，在此处的背景图片中又插入了头像图片-->
+    <header class="top">
+        <img id="headerLogo"
+            src="images/headerLogo.jpg" alt="页眉区的头像图片">
+		<h2>陈柏林</h2>
+		<p>欢迎来到我的世界</p>
+	</header>	
+<!--导航区，展示四个界面-->
+    <nav>
+        <ul>
+            <li class="selected"><a href="index.html">我的首页</a></li>
+            <li><a href="resume.html">我的简介</a></li>
+            <li><a href="life.html">我的生活</a></li>
+            <li><a href="future.html">我的未来</a></li>
+        </ul>
+    </nav>
+    <!--添加表单-->
+    <div id="Container">
+    <a>本人如此平庸，真是抱歉，
+        <br>本身没有什么可以介绍的了，只能写些不知所谓的东西
+        感谢观看到这里
+    </a>
+    <h1>有想要对我说的话就请填写下表吧！</h1>
+    <form>
+    <div class="tableRow">
+        <p>您与此网页主人的关系是：</p>
+        <p>
+            <!--可选择的下拉选项-->
+            <select name="relationship">
+                <option value="同学">同学</option>
+                <option value="师生">师生</option>
+                <option value="亲人">亲人</option>
+                <option value="陌生人">陌生人</option>
+            </select>
+        </p>
+    </div>
+    <div class="tableRow">
+        <p>您的性别：</p>
+        <p>
+            <!--单选选择-->
+            <input type="radio" name="sex" value="man">男<br>
+            <input type="radio" name="sex" value="woman" checked>女
+        </p>
+    </div>
+    <div class="tableRow">
+        <p>您的年龄：</p>
+        <p>
+            <!--带有可以上下调节的选择，下限为1，上限为100-->
+            <input type="number" name="age" min="1" max="100">
+        </p>
+    </div>
+    <div class="tableRow">
+        <p>您的名字：</p>
+        <p>
+            <!--输入文本选项，必选-->
+            <input type="text" name="name" value="" placeholder="请留下真实姓名" required>
+        </p>
+    </div>
+    <div class="tableRow">
+        <p>您的联系方式：</p>
+        <p>
+            <input type="text" name="mailbox" value="" placeholder="电话号码/qq号/微信号" required>
+        </p>
+    </div>
+    <div class="tableRow">
+        <p>想要说的话：</p>
+        <p>
+            <textarea name="comments"></textarea>
+        </p>
+    </div>
+    <div class="tableRow">
+        <p></p><!--用于占位对齐-->
+        <p><input type="submit" value="提交">
+            <!--提交按钮-->
+        </p>
+    </div>
+    </div>
+    </form>
+        <!--页脚区-->
+    <footer>
+      &copy; 2023, by 陈柏林
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: SimSun;
+}
+/* 页眉区 */
+header.top{
+    float:left;
+    width:100%;
+    height:400px;
+    color:#fff;
+    text-align:center;
+    background-image:url(../images/header.jpg);
+    background-size:100% 100%;
+}
+/* 头像图片的设置 ，使之更加美观*/
+header.top img#headerLogo{
+    width:120px;
+    height:120px;
+    margin-top:100px;
+    border:4px solid #fff;
+    border-radius:50%;
+}
+header.top h2{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    margin-top:20px;
+}
+header.top p{
+    font-family:cursive;
+    width:100%;
+    height:50px;
+    line-height:40px;
+    margin-top:10px;
+}
+nav{
+    text-align: center;
+    padding-top: 1%;
+    background-color: #98c1f9;
+    color: #fff;
+}
+nav ul li{
+    list-style:none;
+    display: inline;
+    margin-left: 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 22px;
+}
+/*选择鼠标指针浮动在其上的元素，设置其样式。使导航区更加美观，更有回应感*/
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.386);
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    transition: padding 0.3s, color 0.3s;
+} 
+#tableContainer {
+    background-image: url(../images/school.jpg);
+    width: 100%;
+    height: 200vh;
+    background-position: center;
+    background-size: cover;
+    /* 关于背景图像的设置，保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小 */
+    display: table;
+    /*采取表格布局*/
+    border-spacing: 10px;
+
+  }  
+#tableRow{
+    display: table-row;
+    /* 表格布局的关键代码 */
+}
+#left{
+    background-color:aliceblue;
+    display: table-cell;
+    /* 表格布局的关键代码 */
+    width: 20%;
+    padding: 15px;
+    vertical-align: top;
+}
+#main{
+    display: table-cell;
+    /* 表格布局的关键代码 */
+    background:white url(../images/center.jpg) top left ;
+    font-size:105%;
+    padding:15px;
+    vertical-align: top;
+}
+#right{
+    display: table-cell;
+    /* 表格布局的关键代码 */
+    background:       aliceblue   bottom right;
+    font-size:        105%;
+    padding:          15px;
+    vertical-align: top;
+}
+/* 页脚区的布局设置 */
+footer {
+    background-color: #98c1f9;
+    color:            #efe5d0;
+    text-align:       center;
+    padding:          15px;
+    margin: 10px 10px 10px 10px;
+    font-size:        90%;
+  } 
+    /* 设置超链接的颜色 */
+a:link {
+    color:           white;
+    text-decoration:  none;
+  }
+a:visited {
+    color:            #98732e;
+    text-decoration:  none;
+  }
